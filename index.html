@@ -1,0 +1,31 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>LOGIN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+var userid = prompt('Enter Your Pin ', '');
+
+var validUsers = {
+    '1420': 'https://krampah.com/account1.html',
+    '1320': 'https://onlinejobsusa.github.io/Approval-account/ ',
+    '1220': 'https://krampah.com/account3.html',
+    '1120': 'https://krampah.com/account4.html',
+
+   
+};
+
+if (validUsers[userid]) {
+    alert('Login valid . click ok to open your account');
+    window.location.href = validUsers[userid];
+} else {
+    alert('Invalid login, contact your training agent to assist you');
+}
+</script>
+</body>
+</html>
